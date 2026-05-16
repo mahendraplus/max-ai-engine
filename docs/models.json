@@ -1,0 +1,723 @@
+[
+  {
+    "id": "m1",
+    "name": "Gemma-4-E2B-it",
+    "category": "Multimodal",
+    "format": "LiteRT-LM (.litertlm)",
+    "description": "🏆 BEST OVERALL — Google's latest Gemma 4 with vision, audio & text. 2B parameters optimized for on-device AI. Multimodal powerhouse running fully offline. Best choice for most users.",
+    "size_mb": 2583,
+    "ram_req_gb": 3.5,
+    "min_android_version": 10,
+    "tags": ["Recommended", "Vision", "Audio", "Multimodal", "LiteRT"],
+    "compatibility": {
+      "tier": "mid_to_high",
+      "chipset_examples": ["Snapdragon 7+ Gen 2", "Dimensity 8200", "All ARM64"],
+      "min_ram_gb": 4.0
+    },
+    "technical_specs": {
+      "parameters": "2B",
+      "quantization": "int4_mixed",
+      "context_length": 32768,
+      "supports_vision": true,
+      "supports_audio": true,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": false
+    },
+    "performance": {
+      "cpu_prefill_tokens_per_sec": 557.0,
+      "cpu_decode_tokens_per_sec": 46.9,
+      "gpu_prefill_tokens_per_sec": 3808.0,
+      "gpu_decode_tokens_per_sec": 52.1,
+      "avg_tokens_per_second": 52.1,
+      "cold_start_ms": 1800,
+      "memory_usage_cpu_mb": 1733,
+      "memory_usage_gpu_mb": 676
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm/resolve/main/gemma-4-E2B-it.litertlm",
+    "model_card": "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm"
+  },
+  {
+    "id": "m2",
+    "name": "Phi-4-mini-instruct",
+    "category": "Reasoning",
+    "format": "LiteRT-LM (.litertlm)",
+    "description": "🚀 HIGH-END REASONING — Microsoft's Phi-4-mini, 3.8B parameters. Exceptional at math, coding, and complex logic. Best for flagship devices with 6GB+ RAM.",
+    "size_mb": 4004,
+    "ram_req_gb": 5.5,
+    "min_android_version": 11,
+    "tags": ["Reasoning", "Coding", "Math", "LiteRT", "High-End"],
+    "compatibility": {
+      "tier": "high_end",
+      "chipset_examples": ["Snapdragon 8 Gen 1+", "Dimensity 9000+"],
+      "min_ram_gb": 6.0
+    },
+    "technical_specs": {
+      "parameters": "3.8B",
+      "quantization": "dynamic_int8",
+      "context_length": 4096,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": false
+    },
+    "performance": {
+      "cpu_prefill_tokens_per_sec": 66.5,
+      "cpu_decode_tokens_per_sec": 7.3,
+      "gpu_prefill_tokens_per_sec": 314.0,
+      "gpu_decode_tokens_per_sec": 10.4,
+      "avg_tokens_per_second": 10.4,
+      "cold_start_ms": 2500,
+      "memory_usage_cpu_mb": 5308,
+      "memory_usage_gpu_mb": 4608
+    },
+    "license": "MIT",
+    "direct_download_url": "https://huggingface.co/litert-community/Phi-4-mini-instruct/resolve/main/Phi-4-mini-instruct_multi-prefill-seq_q8_ekv4096.litertlm",
+    "model_card": "https://huggingface.co/litert-community/Phi-4-mini-instruct"
+  },
+  {
+    "id": "m3",
+    "name": "DeepSeek-R1-Distill-Qwen-1.5B",
+    "category": "Reasoning",
+    "format": "LiteRT-LM (.litertlm)",
+    "description": "⚡ BEST REASONING (LiteRT) — Distilled DeepSeek-R1 based on Qwen 2.5. 1.5B parameters with strong reasoning, math and logic. Great balance for mid-range devices.",
+    "size_mb": 1831,
+    "ram_req_gb": 3.0,
+    "min_android_version": 10,
+    "tags": ["Reasoning", "Math", "LiteRT", "Mid-Range"],
+    "compatibility": {
+      "tier": "mid_range",
+      "chipset_examples": ["Snapdragon 7+ Gen 2", "Dimensity 8200", "All ARM64"],
+      "min_ram_gb": 3.0
+    },
+    "technical_specs": {
+      "parameters": "1.5B",
+      "quantization": "dynamic_int8",
+      "context_length": 4096,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": false
+    },
+    "performance": {
+      "cpu_prefill_tokens_per_sec": 166.5,
+      "cpu_decode_tokens_per_sec": 26.4,
+      "gpu_prefill_tokens_per_sec": 927.5,
+      "gpu_decode_tokens_per_sec": 26.9,
+      "avg_tokens_per_second": 26.9,
+      "cold_start_ms": 1500,
+      "memory_usage_cpu_mb": 2221,
+      "memory_usage_gpu_mb": 1659
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/litert-community/DeepSeek-R1-Distill-Qwen-1.5B/resolve/main/DeepSeek-R1-Distill-Qwen-1.5B_multi-prefill-seq_q8_ekv4096.litertlm",
+    "model_card": "https://huggingface.co/litert-community/DeepSeek-R1-Distill-Qwen-1.5B"
+  },
+  {
+    "id": "m4",
+    "name": "Gemma3-1B-IT",
+    "category": "Lightweight",
+    "format": "LiteRT-LM (.litertlm)",
+    "description": "💨 LIGHTWEIGHT (LiteRT) — Google's Gemma 3 1B, ultra-fast for budget devices. ⚠️ Gated model: requires Hugging Face login and Gemma license acceptance before download.",
+    "size_mb": 1005,
+    "ram_req_gb": 2.0,
+    "min_android_version": 9,
+    "tags": ["Lightweight", "LiteRT", "Budget"],
+    "known_issues": "Gated model — requires HuggingFace account and Gemma license acceptance",
+    "compatibility": {
+      "tier": "universal",
+      "chipset_examples": ["All Android devices", "Budget to Flagship"],
+      "min_ram_gb": 2.0
+    },
+    "technical_specs": {
+      "parameters": "1B",
+      "quantization": "int4",
+      "context_length": 8192,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": false
+    },
+    "performance": {
+      "cpu_prefill_tokens_per_sec": 177.0,
+      "cpu_decode_tokens_per_sec": 33.0,
+      "gpu_prefill_tokens_per_sec": 1191.0,
+      "gpu_decode_tokens_per_sec": 24.0,
+      "avg_tokens_per_second": 33.0,
+      "cold_start_ms": 1200,
+      "memory_usage_cpu_mb": 800,
+      "memory_usage_gpu_mb": null
+    },
+    "license": "Gemma License",
+    "direct_download_url": "https://huggingface.co/litert-community/Gemma3-1B-IT/resolve/main/Gemma3-1B-IT_q4_ekv4096.litertlm",
+    "model_card": "https://huggingface.co/litert-community/Gemma3-1B-IT"
+  },
+  {
+    "id": "m5",
+    "name": "Qwen3-0.6B",
+    "category": "Ultra-Lightweight",
+    "format": "LiteRT-LM (.litertlm)",
+    "description": "🔋 ULTRA-LIGHT (LiteRT) — Qwen3 0.6B, the smallest capable model. Perfect for 2GB RAM devices and maximum battery life. Ideal when device resources are very limited.",
+    "size_mb": 586,
+    "ram_req_gb": 1.5,
+    "min_android_version": 9,
+    "tags": ["Ultra-Light", "LiteRT", "Low-End", "Battery"],
+    "compatibility": {
+      "tier": "low_end",
+      "chipset_examples": ["Budget devices", "2GB RAM+", "All ARM64"],
+      "min_ram_gb": 2.0
+    },
+    "technical_specs": {
+      "parameters": "0.6B",
+      "quantization": "dynamic_int8",
+      "context_length": 4096,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": false
+    },
+    "performance": {
+      "cpu_prefill_tokens_per_sec": 165.0,
+      "cpu_decode_tokens_per_sec": 9.0,
+      "gpu_prefill_tokens_per_sec": 580.0,
+      "gpu_decode_tokens_per_sec": 21.0,
+      "avg_tokens_per_second": 21.0,
+      "cold_start_ms": 900,
+      "memory_usage_cpu_mb": 650,
+      "memory_usage_gpu_mb": null
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/litert-community/Qwen3-0.6B/resolve/main/Qwen3-0.6B.litertlm",
+    "model_card": "https://huggingface.co/litert-community/Qwen3-0.6B"
+  },
+  {
+    "id": "m6",
+    "name": "Qwen2.5-3B-Instruct",
+    "category": "Multilingual",
+    "format": "GGUF",
+    "description": "🌍 BEST MULTILINGUAL — Qwen 2.5, 3B parameters. Native support for Hindi, Gujarati, Chinese, Arabic and 25+ languages. Excellent instruction following with long context.",
+    "size_mb": 2200,
+    "extracted_size_mb": 2200,
+    "ram_req_gb": 3.8,
+    "min_android_version": 10,
+    "tags": ["Multilingual", "Hindi", "GGUF", "General"],
+    "compatibility": {
+      "tier": "mid_range",
+      "chipset_examples": ["All ARM64 processors"],
+      "min_ram_gb": 4.0
+    },
+    "technical_specs": {
+      "parameters": "3B",
+      "quantization": "Q4_K_M",
+      "context_length": 32768,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 13.8,
+      "cold_start_ms": 2400
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "fallback_url": "https://hf-mirror.com/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_card": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF"
+  },
+  {
+    "id": "m7",
+    "name": "Llama-3.2-1B-Instruct",
+    "category": "General",
+    "format": "GGUF",
+    "description": "🦙 LLAMA LITE — Meta's Llama 3.2, 1B parameters. Extremely fast, low memory usage. Perfect for quick chat on budget and mid-range phones. Great general-purpose baseline.",
+    "size_mb": 770,
+    "extracted_size_mb": 770,
+    "ram_req_gb": 2.0,
+    "min_android_version": 9,
+    "tags": ["Lightweight", "GGUF", "General", "Fast"],
+    "compatibility": {
+      "tier": "universal",
+      "chipset_examples": ["All ARM64 processors", "Budget to Flagship"],
+      "min_ram_gb": 2.0
+    },
+    "technical_specs": {
+      "parameters": "1B",
+      "quantization": "Q4_K_M",
+      "context_length": 8192,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 38.0,
+      "cold_start_ms": 900
+    },
+    "license": "Llama 3.2 Community License",
+    "direct_download_url": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_M.gguf",
+    "fallback_url": "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_M.gguf",
+    "model_card": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF"
+  },
+  {
+    "id": "m8",
+    "name": "Llama-3.2-3B-Instruct",
+    "category": "General",
+    "format": "GGUF",
+    "description": "🦙 LLAMA BALANCED — Meta's Llama 3.2, 3B parameters. The sweet spot of quality and speed for most users. Great for chat, summarization, and everyday tasks.",
+    "size_mb": 2020,
+    "extracted_size_mb": 2020,
+    "ram_req_gb": 3.5,
+    "min_android_version": 10,
+    "tags": ["General", "GGUF", "Balanced", "Chat"],
+    "compatibility": {
+      "tier": "mid_range",
+      "chipset_examples": ["Snapdragon 7 Gen 1+", "Dimensity 8000+", "All ARM64"],
+      "min_ram_gb": 4.0
+    },
+    "technical_specs": {
+      "parameters": "3B",
+      "quantization": "Q4_K_M",
+      "context_length": 8192,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 18.5,
+      "cold_start_ms": 1800
+    },
+    "license": "Llama 3.2 Community License",
+    "direct_download_url": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "fallback_url": "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "model_card": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF"
+  },
+  {
+    "id": "m9",
+    "name": "Phi-3.5-mini-instruct",
+    "category": "Reasoning",
+    "format": "GGUF",
+    "description": "🔬 PHI REASONING — Microsoft's Phi-3.5 mini, 3.8B parameters. Punches far above its size for reasoning, coding and math. Runs on mid-range devices with 4GB+ RAM.",
+    "size_mb": 2390,
+    "extracted_size_mb": 2390,
+    "ram_req_gb": 4.0,
+    "min_android_version": 10,
+    "tags": ["Reasoning", "Coding", "GGUF", "Microsoft"],
+    "compatibility": {
+      "tier": "mid_to_high",
+      "chipset_examples": ["Snapdragon 7+ Gen 2+", "Dimensity 8200+", "All ARM64"],
+      "min_ram_gb": 4.0
+    },
+    "technical_specs": {
+      "parameters": "3.8B",
+      "quantization": "Q4_K_M",
+      "context_length": 128000,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 14.0,
+      "cold_start_ms": 2200
+    },
+    "license": "MIT",
+    "direct_download_url": "https://huggingface.co/bartowski/Phi-3.5-mini-instruct-GGUF/resolve/main/Phi-3.5-mini-instruct-Q4_K_M.gguf",
+    "fallback_url": "https://hf-mirror.com/bartowski/Phi-3.5-mini-instruct-GGUF/resolve/main/Phi-3.5-mini-instruct-Q4_K_M.gguf",
+    "model_card": "https://huggingface.co/bartowski/Phi-3.5-mini-instruct-GGUF"
+  },
+  {
+    "id": "m10",
+    "name": "Qwen2.5-0.5B-Instruct",
+    "category": "Ultra-Lightweight",
+    "format": "GGUF",
+    "description": "🪶 ULTRA TINY — Qwen 2.5, only 0.5B parameters. Smallest possible useful model at ~400MB. Multilingual support even at this size. For extremely constrained devices.",
+    "size_mb": 398,
+    "extracted_size_mb": 398,
+    "ram_req_gb": 1.2,
+    "min_android_version": 9,
+    "tags": ["Ultra-Light", "GGUF", "Low-End", "Multilingual"],
+    "compatibility": {
+      "tier": "low_end",
+      "chipset_examples": ["All ARM64", "Budget devices 2GB+"],
+      "min_ram_gb": 1.5
+    },
+    "technical_specs": {
+      "parameters": "0.5B",
+      "quantization": "Q4_K_M",
+      "context_length": 4096,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 55.0,
+      "cold_start_ms": 600
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "fallback_url": "https://hf-mirror.com/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "model_card": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF"
+  },
+  {
+    "id": "m11",
+    "name": "Qwen2.5-1.5B-Instruct",
+    "category": "Lightweight",
+    "format": "GGUF",
+    "description": "⚡ FAST & SMART — Qwen 2.5, 1.5B parameters. Excellent speed with good multilingual quality. Ideal for budget phones that need more than 0.5B but can't run 3B.",
+    "size_mb": 1030,
+    "extracted_size_mb": 1030,
+    "ram_req_gb": 2.0,
+    "min_android_version": 9,
+    "tags": ["Lightweight", "GGUF", "Multilingual", "Fast"],
+    "compatibility": {
+      "tier": "low_to_mid",
+      "chipset_examples": ["All ARM64", "Budget to Mid-Range"],
+      "min_ram_gb": 2.5
+    },
+    "technical_specs": {
+      "parameters": "1.5B",
+      "quantization": "Q4_K_M",
+      "context_length": 32768,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 32.0,
+      "cold_start_ms": 1000
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "fallback_url": "https://hf-mirror.com/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "model_card": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF"
+  },
+  {
+    "id": "m12",
+    "name": "DeepSeek-R1-Distill-Qwen-1.5B",
+    "category": "Reasoning",
+    "format": "GGUF",
+    "description": "🧠 REASONING LITE — DeepSeek R1 distilled to 1.5B. Chain-of-thought reasoning in a tiny package. Best budget reasoning model available. For math, logic, and step-by-step problems.",
+    "size_mb": 1120,
+    "extracted_size_mb": 1120,
+    "ram_req_gb": 2.2,
+    "min_android_version": 10,
+    "tags": ["Reasoning", "Math", "GGUF", "DeepSeek", "Lightweight"],
+    "compatibility": {
+      "tier": "universal",
+      "chipset_examples": ["All ARM64 processors"],
+      "min_ram_gb": 2.5
+    },
+    "technical_specs": {
+      "parameters": "1.5B",
+      "quantization": "Q4_K_M",
+      "context_length": 32768,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 30.0,
+      "cold_start_ms": 1100
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf",
+    "fallback_url": "https://hf-mirror.com/bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M.gguf",
+    "model_card": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF"
+  },
+  {
+    "id": "m13",
+    "name": "DeepSeek-R1-Distill-Qwen-7B",
+    "category": "Reasoning",
+    "format": "GGUF",
+    "description": "🧠 REASONING PRO — DeepSeek R1 distilled to 7B. Top-tier reasoning, math and coding. Flagship-only due to RAM needs. Produces detailed chain-of-thought answers.",
+    "size_mb": 4680,
+    "extracted_size_mb": 4680,
+    "ram_req_gb": 6.5,
+    "min_android_version": 11,
+    "tags": ["Reasoning", "Coding", "Math", "GGUF", "DeepSeek", "High-End"],
+    "compatibility": {
+      "tier": "high_end",
+      "chipset_examples": ["Snapdragon 8 Gen 2+", "Dimensity 9200+"],
+      "min_ram_gb": 7.0
+    },
+    "technical_specs": {
+      "parameters": "7B",
+      "quantization": "Q4_K_M",
+      "context_length": 32768,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 8.5,
+      "cold_start_ms": 4500
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-7B-Q4_K_M.gguf",
+    "fallback_url": "https://hf-mirror.com/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-7B-Q4_K_M.gguf",
+    "model_card": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF"
+  },
+  {
+    "id": "m14",
+    "name": "Gemma-3-4B-it",
+    "category": "General",
+    "format": "GGUF",
+    "description": "💎 GEMMA BALANCED — Google's Gemma 3, 4B parameters. Excellent general-purpose quality with great instruction following. Good balance of size and capability for mid-range phones.",
+    "size_mb": 2680,
+    "extracted_size_mb": 2680,
+    "ram_req_gb": 4.2,
+    "min_android_version": 10,
+    "tags": ["General", "GGUF", "Google", "Balanced"],
+    "compatibility": {
+      "tier": "mid_to_high",
+      "chipset_examples": ["Snapdragon 7+ Gen 2+", "Dimensity 8200+", "All ARM64"],
+      "min_ram_gb": 4.5
+    },
+    "technical_specs": {
+      "parameters": "4B",
+      "quantization": "Q4_K_M",
+      "context_length": 8192,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 12.0,
+      "cold_start_ms": 2800
+    },
+    "license": "Gemma License",
+    "direct_download_url": "https://huggingface.co/bartowski/gemma-3-4b-it-GGUF/resolve/main/gemma-3-4b-it-Q4_K_M.gguf",
+    "fallback_url": "https://hf-mirror.com/bartowski/gemma-3-4b-it-GGUF/resolve/main/gemma-3-4b-it-Q4_K_M.gguf",
+    "model_card": "https://huggingface.co/bartowski/gemma-3-4b-it-GGUF"
+  },
+  {
+    "id": "m15",
+    "name": "Mistral-7B-Instruct-v0.2",
+    "category": "General",
+    "format": "GGUF",
+    "description": "🌪️ MISTRAL CLASSIC — Mistral's 7B flagship. Sharp reasoning, fast token speed for its size, and excellent instruction following. Flagship phones only. Industry-proven reliability.",
+    "size_mb": 4370,
+    "extracted_size_mb": 4370,
+    "ram_req_gb": 6.0,
+    "min_android_version": 11,
+    "tags": ["General", "GGUF", "Mistral", "High-End", "Proven"],
+    "compatibility": {
+      "tier": "high_end",
+      "chipset_examples": ["Snapdragon 8 Gen 2+", "Dimensity 9000+"],
+      "min_ram_gb": 6.5
+    },
+    "technical_specs": {
+      "parameters": "7B",
+      "quantization": "Q4_K_M",
+      "context_length": 32768,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 9.0,
+      "cold_start_ms": 4200
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "fallback_url": "https://hf-mirror.com/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "model_card": "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF"
+  },
+  {
+    "id": "m16",
+    "name": "Mistral-Nemo-Instruct-2407",
+    "category": "General",
+    "format": "GGUF",
+    "description": "🌊 MISTRAL NEMO — Mistral x NVIDIA, 12B parameters. Exceptionally long 128K context window. Best for document analysis, long conversations, and summarization. Flagship only.",
+    "size_mb": 7170,
+    "extracted_size_mb": 7170,
+    "ram_req_gb": 9.0,
+    "min_android_version": 12,
+    "tags": ["General", "GGUF", "Long-Context", "High-End", "Mistral"],
+    "compatibility": {
+      "tier": "flagship",
+      "chipset_examples": ["Snapdragon 8 Gen 3", "Dimensity 9300"],
+      "min_ram_gb": 10.0
+    },
+    "technical_specs": {
+      "parameters": "12B",
+      "quantization": "Q4_K_M",
+      "context_length": 128000,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 5.5,
+      "cold_start_ms": 7000
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/bartowski/Mistral-Nemo-Instruct-2407-GGUF/resolve/main/Mistral-Nemo-Instruct-2407-Q4_K_M.gguf",
+    "fallback_url": "https://hf-mirror.com/bartowski/Mistral-Nemo-Instruct-2407-GGUF/resolve/main/Mistral-Nemo-Instruct-2407-Q4_K_M.gguf",
+    "model_card": "https://huggingface.co/bartowski/Mistral-Nemo-Instruct-2407-GGUF"
+  },
+  {
+    "id": "m17",
+    "name": "Qwen2.5-7B-Instruct",
+    "category": "Multilingual",
+    "format": "GGUF",
+    "description": "🌍 MULTILINGUAL PRO — Qwen 2.5 at 7B. Best-in-class multilingual quality including Hindi, Gujarati, Chinese, Arabic. Powerful coding and math. Requires flagship device.",
+    "size_mb": 4680,
+    "extracted_size_mb": 4680,
+    "ram_req_gb": 6.5,
+    "min_android_version": 11,
+    "tags": ["Multilingual", "Hindi", "Coding", "GGUF", "High-End"],
+    "compatibility": {
+      "tier": "high_end",
+      "chipset_examples": ["Snapdragon 8 Gen 2+", "Dimensity 9200+"],
+      "min_ram_gb": 7.0
+    },
+    "technical_specs": {
+      "parameters": "7B",
+      "quantization": "Q4_K_M",
+      "context_length": 32768,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 8.0,
+      "cold_start_ms": 4500
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/main/qwen2.5-7b-instruct-q4_k_m.gguf",
+    "fallback_url": "https://hf-mirror.com/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/main/qwen2.5-7b-instruct-q4_k_m.gguf",
+    "model_card": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF"
+  },
+  {
+    "id": "m18",
+    "name": "SmolLM2-135M-Instruct",
+    "category": "Ultra-Lightweight",
+    "format": "GGUF",
+    "description": "🐣 SMALLEST POSSIBLE — HuggingFace SmolLM2, just 135M parameters and ~100MB download. Instant loading, near-zero RAM. For testing or very basic responses on any Android device.",
+    "size_mb": 95,
+    "extracted_size_mb": 95,
+    "ram_req_gb": 0.5,
+    "min_android_version": 8,
+    "tags": ["Ultra-Light", "GGUF", "Experimental", "Instant"],
+    "compatibility": {
+      "tier": "low_end",
+      "chipset_examples": ["All Android devices", "Any ARM64"],
+      "min_ram_gb": 1.0
+    },
+    "technical_specs": {
+      "parameters": "0.135B",
+      "quantization": "Q4_K_M",
+      "context_length": 2048,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": false
+    },
+    "performance": {
+      "avg_tokens_per_second": 120.0,
+      "cold_start_ms": 300
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/bartowski/SmolLM2-135M-Instruct-GGUF/resolve/main/SmolLM2-135M-Instruct-Q4_K_M.gguf",
+    "fallback_url": "https://hf-mirror.com/bartowski/SmolLM2-135M-Instruct-GGUF/resolve/main/SmolLM2-135M-Instruct-Q4_K_M.gguf",
+    "model_card": "https://huggingface.co/bartowski/SmolLM2-135M-Instruct-GGUF"
+  },
+  {
+    "id": "m19",
+    "name": "SmolLM2-360M-Instruct",
+    "category": "Ultra-Lightweight",
+    "format": "GGUF",
+    "description": "🐤 SMOL SMART — HuggingFace SmolLM2, 360M parameters. Surprisingly capable for its size. ~250MB download, lightning fast. Great for simple queries on any device.",
+    "size_mb": 245,
+    "extracted_size_mb": 245,
+    "ram_req_gb": 0.8,
+    "min_android_version": 8,
+    "tags": ["Ultra-Light", "GGUF", "Fast", "Budget"],
+    "compatibility": {
+      "tier": "low_end",
+      "chipset_examples": ["All Android devices", "Any ARM64"],
+      "min_ram_gb": 1.0
+    },
+    "technical_specs": {
+      "parameters": "0.36B",
+      "quantization": "Q4_K_M",
+      "context_length": 2048,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": false
+    },
+    "performance": {
+      "avg_tokens_per_second": 90.0,
+      "cold_start_ms": 450
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/bartowski/SmolLM2-360M-Instruct-GGUF/resolve/main/SmolLM2-360M-Instruct-Q4_K_M.gguf",
+    "fallback_url": "https://hf-mirror.com/bartowski/SmolLM2-360M-Instruct-GGUF/resolve/main/SmolLM2-360M-Instruct-Q4_K_M.gguf",
+    "model_card": "https://huggingface.co/bartowski/SmolLM2-360M-Instruct-GGUF"
+  },
+  {
+    "id": "m20",
+    "name": "SmolLM2-1.7B-Instruct",
+    "category": "Lightweight",
+    "format": "GGUF",
+    "description": "🐥 SMOL POWERHOUSE — HuggingFace SmolLM2, 1.7B parameters. Best of the SmolLM family — genuinely useful for everyday tasks. ~1.1GB, fast, and works on most devices.",
+    "size_mb": 1080,
+    "extracted_size_mb": 1080,
+    "ram_req_gb": 2.0,
+    "min_android_version": 9,
+    "tags": ["Lightweight", "GGUF", "General", "Fast"],
+    "compatibility": {
+      "tier": "universal",
+      "chipset_examples": ["All ARM64 processors", "Budget to Flagship"],
+      "min_ram_gb": 2.5
+    },
+    "technical_specs": {
+      "parameters": "1.7B",
+      "quantization": "Q4_K_M",
+      "context_length": 8192,
+      "supports_vision": false,
+      "supports_audio": false,
+      "supports_gpu": true,
+      "supports_npu": false,
+      "flash_attention": true
+    },
+    "performance": {
+      "avg_tokens_per_second": 35.0,
+      "cold_start_ms": 1000
+    },
+    "license": "Apache 2.0",
+    "direct_download_url": "https://huggingface.co/bartowski/SmolLM2-1.7B-Instruct-GGUF/resolve/main/SmolLM2-1.7B-Instruct-Q4_K_M.gguf",
+    "fallback_url": "https://hf-mirror.com/bartowski/SmolLM2-1.7B-Instruct-GGUF/resolve/main/SmolLM2-1.7B-Instruct-Q4_K_M.gguf",
+    "model_card": "https://huggingface.co/bartowski/SmolLM2-1.7B-Instruct-GGUF"
+  }
+]
